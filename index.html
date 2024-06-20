@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Magen Investments Ltd.</title>
+    <link rel="icon" href="./images/shield-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap"
+    />
+    <link rel="stylesheet" href="mageni_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner-wrapper">
+        <div class="banner-stripe"></div>
+        <div class="banner-image-wrapper">
+          <img src="./images/shield-icon.png" alt="shield-icon" />
+        </div>
+      </div>
+      <h1 class="title">מגן בית השקעות בע"מ</h1>
+      <div class="main-text-wrapper">
+        <div class="main-text">
+          <p>
+            האם אתה מעדיף אנשים אחראים ומנוסים שינהלו לך את הכספים?
+            <br />
+            האם אתה רוצה להיות חלק מקבוצת משקיעים לא גדולה שהכסף שלהם מקבל תשומת
+            לב מיוחדת?
+            <br />
+            האם אתה מעוניין להיות מעודכן בשוק ההון ובשיקולים בבחירת הענפים
+            המובילים?
+          </p>
+          <hr />
+          <p id="summery">
+            מגן הינו בית השקעות בוטיק המנוהל על ידי אנשים מנוסים וותיקים בשוק
+            ההון.
+          </p>
+        </div>
+      </div>
+      <div class="founders">
+        <div id="itai-feig" class="founder">
+          <div class="image-wrapper-container">
+            <div class="image-wrapper">
+              <img
+                src="./images/itai_feig.png"
+                alt="Itay Feig"
+                width="80"
+                height="80"
+              />
+            </div>
+          </div>
+          <h4 class="founder-header">איתי פייג</h4>
+          <hr class="bar top-bar" />
+          <p class="founder-description">
+            B.A בניהול, MBA בניהול עסקים, בעל רישיון לניהול תיקים, עבד בעבר
+            בהראל פיננסים, מורה בית השקעות ובמערך הייעוץ של יובנק
+          </p>
+          <hr class="bar bottom-bar" />
+        </div>
+        <div id="david-brami" class="founder">
+          <div class="image-wrapper-container">
+            <div class="image-wrapper">
+              <img src="./images/david_brami.png" alt="David Brami" />
+            </div>
+          </div>
+          <h4 class="founder-header">דוד בראמי</h4>
+          <hr class="bar top-bar" />
+          <p class="founder-description">
+            30 שנים בבנקאות פרטית
+            <br />
+            ושוק ההון, B.Sc בכלכלה וניהול, MBA במנהל עסקים,
+            <br />
+            רישיון לניהול
+            <br />
+            תיקים ופנסיוני
+          </p>
+          <hr class="bar bottom-bar" />
+        </div>
+        <div id="boaz-aylon" class="founder">
+          <div class="image-wrapper-container">
+            <div class="image-wrapper">
+              <img src="./images/boaz_aylon.png" alt="Boaz Aylon" />
+            </div>
+          </div>
+          <h4 class="founder-header">בועז אילון</h4>
+          <hr class="bar top-bar" />
+          <p class="founder-description">
+            תטא השקעות לשעבר,
+            <br />
+            B.A בכלכלה ו-MBA.
+            <br />
+            אנליסט ותיק וכותב הספר "בורסה זה שם המסחר".
+            <br />
+            משמש כמנהל השקעות ראשי
+          </p>
+          <hr class="bar bottom-bar" />
+        </div>
+      </div>
+      <div class="footer">
+        <button id="openFormBtn" class="create-form-btn">
+          צור קשר עם מומחה
+        </button>
+      </div>
+      <div class="disclaimer">
+        <p>נכתב בלשון זכר לצורכי נוחות בלבד אך מיועד לנשים וגברים כאחד</p>
+      </div>
+    </div>
+
+    <div id="formDialog" class="form-dialog">
+      <div class="form-content-wrapper">
+        <div class="form-content">
+          <div id="closeFormBtn" class="close">
+            <label>&#10005;</label>
+          </div>
+          <h3 id="formTitle" class="form-title">מלא פרטים ליצירת קשר</h3>
+          <div class="form-wrapper">
+            <form id="contactForm" method="POST">
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="שם מלא"
+                required
+              />
+
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="טלפון"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="מייל"
+                required
+              />
+              <textarea
+                id="freeText"
+                name="freeText"
+                placeholder="הערות"
+              ></textarea>
+              <input class="btn-form-submit" type="submit" value="שלח" />
+            </form>
+          </div>
+          <div id="thankYouMessage" style="display: none">
+            <img
+              src="./images/circle_mark_success_tick_icon.png"
+              alt="success circle tick"
+            />
+            <h3>תודה! פנייתך נשלחה בהצלחה.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="dialog.js"></script>
+  <script src="nagishli_beta.js"></script>
+</html>
