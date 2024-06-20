@@ -1,11 +1,11 @@
 
 <?php
 function sendEmail($formData) {
-    $apiKey = "";
-    $apiSecret = "";
+    $apiKey = "0bbf133b217a94e41ef6feff13575e09";
+    $apiSecret = "353baee172c65fcff3cfd1ecd4255c33";
     $BASE_URL = "https://api.mailjet.com/v3.1";
-    $fromMail = "faigitay@gmail.com";
-    $fromName = "Itay Faig";
+    $fromMail = "automail@mageni.co.il";
+    $fromName = "Mageni Automail";
     $toEmail = 'itay@mageni.co.il';
     $toName = 'itay Mageni';
     
