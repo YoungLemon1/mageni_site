@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   var formDialog = document.getElementById("formDialog");
+  var formArea = document.getElementById("formContent");
   var formTitle = document.getElementById("formTitle");
   var openFormBtn = document.getElementById("openFormBtn");
   var closeFormBtn = document.getElementById("closeFormBtn");
@@ -7,6 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   var thankYouMessage = document.getElementById("thankYouMessage");
 
   // Show the form dialog when the button is clicked
+
   openFormBtn.onclick = function () {
     formDialog.style.display = "block";
     // Show the main form
