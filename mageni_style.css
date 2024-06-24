@@ -609,7 +609,7 @@ input[type="submit"]:active {
   }
 
   .form-content {
-    width: 80%;
+    width: 40%;
   }
 }
 @media screen and (max-width: 760px) {
